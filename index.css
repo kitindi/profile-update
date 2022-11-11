@@ -40,7 +40,18 @@ nav{
     font-weight: 500;
 }
 
+/* navbar smalll screen */
+@media screen  and(max-width:768px){}
+    
+
+
 /* Banner Styles */
+/* Banner smalll screen */
+@media screen  and(max-width:768px){}
+ 
+
+/* Banner Large screen */
+
 .banner{
     width: 100%;
     max-width: 1110px;
@@ -91,7 +102,11 @@ max-width: 200PX;
  cursor: pointer;
 }
 
-/* ABout Section */
+/* About Section smalll screen */
+@media screen  and(max-width:768px){}
+ 
+
+/* About Section larger screen */
 .about-section{
     width: 100%;
     max-width: 1110px;
@@ -101,9 +116,9 @@ max-width: 200PX;
 .box{
     position: absolute;
     left: 50%;
-    width: 50px;
-    height: 50px;
-    top: -25px;
+    width: 40px;
+    height: 40px;
+    top: -20px;
     background-color: #0169A3;
     color: #0169A3;
     transform: rotate(45deg);
