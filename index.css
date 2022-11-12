@@ -39,6 +39,11 @@ nav{
     color: white;
     font-size: 20px;
     font-weight: 500;
+    padding: 5px;
+    border-bottom: 2px solid inherit;
+}
+.nav-link:hover{
+    border-bottom: 2px solid #FFBB59; 
 }
 .menu-icon{
     display: none;
@@ -57,7 +62,7 @@ nav{
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 20px;
+        padding: 15px;
     }
     .logo{
         font-size: 25px;
@@ -80,7 +85,7 @@ nav{
     }
     .nav-bar{
         position: absolute;
-        padding: 20px;
+        padding: 120px 20px;
         width: 100%;
         top: 80px;
         left: -100%;
@@ -88,7 +93,12 @@ nav{
         flex-direction: column;
         height: 100vh;
         background-color: #0169A3;
+        background-image: linear-gradient(to right, #0443a2, #0057a7, #0068a4, #0f779f, #478499);
         transition: all 0.5s ease-out;
+    }
+    .nav-bar .nav-link{
+        font-size: 20px;
+        margin-bottom: 60px;
     }
 }
     
@@ -98,21 +108,33 @@ nav{
 /* Banner smalll screen */
 
 @media screen and (max-width: 768px) {
+  
     .banner {
-        padding: 50px 20px;
+        padding: 100px 15px;
     }
-    .grid-box{
-        display: flex;
-        flex-direction: column;
-        background: #000;
+    .banner .grid-box{
+        grid-template-columns: 10fr 1fr;
     }
-    .title{
-        font-size: 16px;
+    .banner .title {
+        font-size: 22px;
+        font-weight: 400;
     }
-    .left-grid-item .text{
-        color: #e2e8f0;
-
+    .banner .description {
+        font-size: 29px;
+        line-height: 1.5;
+        font-weight: 500;
+    }.banner .left-grid-item{
+        text-align:center ;
     }
+    .banner .text{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .banner .cta-btn{
+        margin: 0 auto;
+        width: 70%;
+    }
+  
 }
 
 /* Banner Large screen */
@@ -127,15 +149,15 @@ nav{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 6fr 4fr;
+    grid-template-columns: 6fr 5fr;
 }
+
 .left-grid-item{
 width: 100%;
  height: 100%;
  display: flex;
  flex-direction: column;
 justify-content: center;
-
 }
 .title{
     font-size: 30px;
@@ -151,25 +173,49 @@ justify-content: center;
 }
 .text{
     color: #e2e8f0;
+    margin-bottom: 10px;
 
 }
 .cta-btn{
 border: none;
-max-width: 200PX;
+max-width: 300PX;
  padding: 12px 24px;
  margin-top: 20px;
  font-size: 18px;
- font-weight: bold;
+ font-weight: 300;
  letter-spacing: 1;
  background:inherit;
- border-radius: 5px;
- border: 2px solid #fbbf24; 
+ border: 2px solid #e2e8f0; 
  color: #e2e8f0;
  cursor: pointer;
 }
 
 /* About Section smalll screen */
-@media screen  and(max-width:768px){}
+@media screen  and (max-width:768px){
+    .about-section .about-techskills{
+        padding:30px 15px;
+    }
+    .about-section .box{
+        left: 45%;
+    }
+    .about-techskills .tech-stack{
+        padding: 10px 0px;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+    .about-techskills h2{
+        font-size: 18px;
+    }
+    .about-techskills p{
+        font-size: 16px;
+        color: #374151;
+        line-height: 1.6;
+    }
+    .tech-stack span{
+        font-size: 30px;
+    }
+}
  
 
 /* About Section larger screen */
@@ -177,6 +223,7 @@ max-width: 200PX;
     width: 100%;
     max-width: 1110px;
     margin: 0 auto;
+    padding: 40px 0px;
   position: relative;  
 }
 .box{
@@ -188,4 +235,66 @@ max-width: 200PX;
     background-color: #0169A3;
     color: #0169A3;
     transform: rotate(45deg);
+}
+.about-techskills{
+    padding: 60px 0px;
+}
+.about-techskills h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #374151;
+}
+.about-techskills p{
+    font-size: 20px;
+    color: #374151;
+    line-height: 1.6;
+}
+.tech-stack{
+    max-width: 1110px;
+    margin: 0 auto;;
+    display: flex;
+    gap: 80px;
+    padding: 30px 0;
+}
+.tech-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tech-icon span.js{
+    font-size: 60px;
+    color: #FFBB59;
+}
+.tech-icon span.node{
+    font-size: 60px;
+    color: #22c55e;
+}
+.tech-icon span.html{
+    font-size: 60px;
+    color: #0057a7;
+}
+.tech-icon span.css{
+    font-size: 60px;
+    color: #1e293b;
+}
+.tech-icon span.boot{
+    font-size: 60px;
+    color: #1e293b;
+}
+.tech-icon span.react{
+    font-size: 60px;
+    color: #0057a7;
+}
+.tech-icon span.db{
+    font-size: 60px;
+    color: #0057a7;
+}
+.tech-icon span.git{
+    font-size: 60px;
+    color: #1e293b;
+}
+.tech-icon .language{
+    font-size: 16px;
+    color: #374151;
 }
