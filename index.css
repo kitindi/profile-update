@@ -221,7 +221,7 @@ max-width: 300PX;
 /* About Section larger screen */
 .about-section{
     width: 100%;
-    max-width: 1110px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 40px 0px;
   position: relative;  
@@ -241,7 +241,7 @@ max-width: 300PX;
 }
 .about-techskills h2{
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 30px;
     color: #374151;
 }
@@ -254,8 +254,8 @@ max-width: 300PX;
     max-width: 1110px;
     margin: 0 auto;;
     display: flex;
-    gap: 80px;
-    padding: 30px 0;
+    justify-content: space-between;    
+    padding: 40px 0;
 }
 .tech-icon{
     display: flex;
@@ -294,7 +294,68 @@ max-width: 300PX;
     font-size: 60px;
     color: #1e293b;
 }
+.tech-icon span.figma{
+    font-size: 60px;
+    color: #fd4931;
+}
 .tech-icon .language{
     font-size: 16px;
     color: #374151;
+}
+
+/* Resume Section smalll screen */
+@media screen  and (max-width:768px){
+    .resume-container .resume-title{
+font-size: 20px;
+color: #1f2937;
+    }
+   
+}
+
+
+/* Resume Section lerger screen */
+
+.resume-section{
+    width: 100%;
+    padding: 100px 0px;
+    background: #f1f5f9;
+}
+.resume-container{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    text-align: center;
+}
+.resume-title{
+    font-size: 22px;margin-bottom: 50px;  color: #1f2937;
+}
+.cta-resume{
+    padding: 16px 80px;
+    background-image: linear-gradient(to right, #0443a2, #0057a7, #0068a4, #0f779f, #478499);
+    color:#f8fafc;
+    font-weight: 500;
+    transition: background-image .3s ease-in-out;
+}
+.cta-resume:hover{
+    padding: 16px 80px;
+    background-image: linear-gradient(to right, #033d94, #024d94, #006097, #0b668a, #41798b);
+    color:#f8fafc;
+    font-weight: 500;
+}
+
+
+/* Projects Section smalll screen */
+@media screen  and (max-width:768px){}
+
+
+/* Projects Section larger screen */
+
+.projects-section{
+    width: 100%;
+    height: 70vh;
+    padding: 100px 0px;
+}
+.project-container{
+    max-width: 1110px;
+    margin: 0 auto;
 }
