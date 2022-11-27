@@ -455,7 +455,9 @@ nav {
     line-height: 1.6;
     font-size: 18px;
   }
-  .screenshot,
+  .screenshot {
+    display: none !important;
+  }
   .project-description {
     border: none;
     padding: 40px 0px;
