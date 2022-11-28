@@ -66,7 +66,7 @@ nav {
 
 .nav-link {
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   padding: 5px;
   border-bottom: 2px solid inherit;
@@ -81,10 +81,10 @@ nav {
 }
 @media screen and (min-width: 1200px) {
   .logo {
-    font-size: 35px;
+    font-size: 30px;
   }
   .nav-link {
-    font-size: 25px;
+    font-size: 20px;
   }
   .nav {
     max-width: 1400px;
@@ -150,7 +150,7 @@ nav {
   }
 
   .nav-bar .nav-link {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 60px;
   }
 }
@@ -342,6 +342,10 @@ nav {
   font-size: 60px;
   color: #0057a7;
 }
+.tech-icon span.laravel {
+  font-size: 60px;
+  color: #ea580c;
+}
 
 .tech-icon span.html {
   font-size: 60px;
@@ -449,18 +453,29 @@ nav {
 @media screen and (max-width: 768px) {
   .slider-content {
     flex-direction: column;
-    padding: 20px 0px;
+    padding: 0px 10px;
+  }
+  .slider-content .screenshot {
+    display: none;
   }
   .project-description p {
     line-height: 1.6;
     font-size: 18px;
   }
-  .screenshot {
-    display: none !important;
-  }
+
   .project-description {
     border: none;
     padding: 40px 0px;
+  }
+  .project-technologies ul {
+    font-size: 16px;
+    flex-wrap: wrap;
+  }
+  .project-links ul {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    color: #0443a2;
   }
 }
 
@@ -475,7 +490,7 @@ nav {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px 0px;
+  padding: 30px 10px;
 }
 .title h2 {
   color: #1f2937;
@@ -489,39 +504,11 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.arrows {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: end;
-  padding: 20px 0;
-  gap: 50px;
-}
-.arrows span {
-  font-size: 30px;
-  color: #9ca3af;
-  color: #3371c8;
-  cursor: pointer;
-  transition: color 0.2s ease-in-out;
-}
-.arrows span:hover {
-  font-size: 30px;
-  color: #9ca3af;
-  color: #2365c2;
-  cursor: pointer;
-}
-.wrapper {
-  width: 1300px;
-  height: 500px;
-  overflow: hidden;
-}
-.slider {
-  max-width: 1300px;
-  height: 100%;
-  display: flex;
-}
+
 .slider-content {
-  width: 1300px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   height: 100%;
   display: flex;
   gap: 10px;
@@ -531,7 +518,6 @@ nav {
   flex: 10;
   border: 2px solid #64748b;
   padding: 20px;
-  overflow: hidden;
 }
 .screenshot img {
   position: relative;
@@ -569,14 +555,14 @@ nav {
 .project-technologies ul {
   display: flex;
   gap: 20px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   color: #0443a2;
 }
 .project-links ul {
   display: flex;
   gap: 20px;
-  font-size: 15px;
+  font-size: 20px;
   color: #0443a2;
 }
 
@@ -610,11 +596,18 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+  .contact-container h2 {
+    font-size: 25px;
+  }
+  .contact-container p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
   .contact {
     padding: 50px 20px;
   }
   .phone,
   .email {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
